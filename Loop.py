@@ -6,13 +6,6 @@ Created on Wed Sep  9 18:56:01 2020
 """
 
 """
-c = 0
-While (c < 5):
-    print(c)
-    c = c + 1
-"""
-
-"""
 Fahrenheit = Celsius x (9/5) + 32
 """
 
