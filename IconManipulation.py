@@ -13,7 +13,7 @@ Program to minipulate an icon using one type of character to a different type
 of character
 
 """
-#Testing using branches Master
+#Testing using branch Master
 
 #Bit sequence
 bseq = (1,1,1,1,1,1,1,1,1,1,
