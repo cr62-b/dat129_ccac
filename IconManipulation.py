@@ -45,7 +45,8 @@ def displayMatrix():
   
 def main():
     print()
-    print("----------------------------") 
+    print("----------------------------")
+    print()
     print("Printing Icon")
     displayMatrix()    
 
