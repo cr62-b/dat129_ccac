@@ -14,7 +14,7 @@ of character
 
 """
 
-#Testing using branches
+#Testing using branches Testing
 
 #Bit sequence
 bseq = (1,1,1,1,1,1,1,1,1,1,
