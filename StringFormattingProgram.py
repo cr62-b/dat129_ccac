@@ -20,7 +20,7 @@ FileData = DataFile.read()
 List = [FileData]
 
 
-#Output the list in file: Names
+#Output the list in file: Names.txt
 def DataList():
     print("--------------------------------")
     print("Names in file Names.txt:")
@@ -41,20 +41,18 @@ def GoodEvening():
     print("String formatting program output:")
     print()
     for line in FileData:
-
-        if line != " ":
+        if line != " ": 
             FirstName += line
-
-        if line == " ":
-            FNEnd = Index #Capturing the index of the end of the first name
-            
+        if line == " ": #First delimiter
+            FNEnd = Index #Capture the index of the end of the first name
         if line != "\n":
             LastName += line
             Index += 1 #Index counts here to prevent counting a carriage return
-
-        if line == "\n":
-            print("Good eveing Dr.",LastName[FNEnd:Index] , "Would you mind if I call you", FirstName[FNBeg:FNEnd], "?")
-            FNBeg = Index #Capturing the index of the beginning of the first name
+        if line == "\n": #Second delimiter
+            print("Good eveing Dr.", LastName[FNEnd:Index],\
+                  "," , " Would you mind if I call you ",\
+                      FirstName[FNBeg:FNEnd], "?",sep="")
+            FNBeg = Index #Capture the index of the beginning of the first name
 
 def Main():
     DataList()
