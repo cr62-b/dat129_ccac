@@ -19,7 +19,6 @@ DataFile = open(FileName, 'r')
 FileData = DataFile.read()
 List = [FileData]
 
-
 #Output the list in file: Names.txt
 def DataList():
     print("--------------------------------")
