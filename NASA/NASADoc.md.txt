@@ -1,0 +1,63 @@
+
+Dat-129  Python2 Programming
+Assignment API Module using NASA API
+Due 09-30-2020
+Clifford B. Rohal
+
+NeoWs (Near Earth Object Web Service) is a RESTful web service for near
+earth Asteroid information. With NeoWs a user can: search for Asteroids based
+on their closest approach date to Earth, lookup a specific Asteroid with its
+NASA JPL small body id, as well as browse the overall data-set.
+
+Neo - Feed
+Retrieve a list of Asteroids based on their closest approach date to Earth. GET https://api.nasa.gov/neo/rest/v1/feed?start_date=START_DATE&end_date=END_DATE&api_key=API_KEY
+Query Parameters
+Parameter	Type	Default	Description
+start_date	YYYY-MM-DD	none	Starting date for asteroid search
+end_date	YYYY-MM-DD	7 days after start_date	Ending date for asteroid search
+api_key	string	DEMO_KEY	api.nasa.gov key for expanded usage
+Example query
+https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=DEMO_KEY
+
+api_key = "EOkBPMTDwuSeAtb58CtXp3fw1cxPrqawvwy10RQ6"
+base_url = "https://api.nasa.gov/neo/rest/v1/feed"
+response = requests.get(base_url, params=parameters)
+print("="*88)
+pprint.pprint(response.json())
+
+OUTPUT:
+ api_key=EOkBPMTDwuSeAtb58CtXp3fw1cxPrqawvwy10RQ6'},
+                                        'name': '(2020 RR3)',
+                                        'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=54053927',
+                                        'neo_reference_id': '54053927'},
+                                       {'absolute_magnitude_h': 26.567,
+                                        'close_approach_data': [{'close_approach_date': '2020-10-07',
+                                                                 'close_approach_date_full': '2020-Oct-07 '
+                                                                                             '14:55',
+                                                                 'epoch_date_close_approach': 1602082500000,
+                                                                 'miss_distance': {'astronomical': '0.0113658251',
+                                                                                   'kilometers': '1700303.225752537',
+                                                                                   'lunar': '4.4213059639',
+                                                                                   'miles': '1056519.4330255306'},
+                                                                 'orbiting_body': 'Earth',
+                                                                 'relative_velocity': {'kilometers_per_hour': '20982.3131145928',
+                                                                                       'kilometers_per_second': '5.8284203096',
+                                                                                       'miles_per_hour': '13037.5933905646'}}],
+                                        'estimated_diameter': {'feet': {'estimated_diameter_max': 94.7599951897,
+                                                                        'estimated_diameter_min': 42.3779581583},
+                                                               'kilometers': {'estimated_diameter_max': 0.0288828456,
+                                                                              'estimated_diameter_min': 0.0129168012},
+                                                               'meters': {'estimated_diameter_max': 28.8828456096,
+                                                                          'estimated_diameter_min': 12.9168012333},
+                                                               'miles': {'estimated_diameter_max': 0.0179469627,
+                                                                         'estimated_diameter_min': 0.0080261257}},
+                                        'id': '54075551',
+                                        'is_potentially_hazardous_asteroid': False,
+                                        'is_sentry_object': False,
+                                        'links': {'self': 'http://www.neowsapp.com/rest/v1/neo/54075551
+api_key=EOkBPMTDwuSeAtb58CtXp3fw1cxPrqawvwy10RQ6'},
+                                        'name': '(2020 UE2)',
+                                        'nasa_jpl_url': 'http://ssd.jpl.nasa.gov/sbdb.cgi?sstr=54075551',
+                                        'neo_reference_id': '54075551'}]}}
+----------------------------------------------------------------------------------------
+https://api.nasa.gov/neo/rest/v1/feed?api_key=EOkBPMTDwuSeAtb58CtXp3fw1cxPrqawvwy10RQ6&start_date=2020-10-07&end_date=2020-10-07

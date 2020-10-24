@@ -1,0 +1,3 @@
+{'properties': {'asset_type': 'Bridge', 'status': 'Planned', 'id': 1850147310, 'start_date': '2017-02-08', 'asset_id': 'Columbus Avenue Bridge', 'task_description': 'Columbus Avenue Bridge Handicapped Ramp and Intersection Improvements', 'name': 'BRIDGE REPAIRS', 'area': 'Engineering and Construction', 'fiscal_year': '2017', 'budgeted_amount': 100000.0}, 'type': 'Feature', 'id': 1850147310, 'geometry': {'type': 'Point', 'coordinates': [-80.02443937613018, 40.45848456403248, 1850147310.0]}}
+$426,246.78
+$424,544,782.23
